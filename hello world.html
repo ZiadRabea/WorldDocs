@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> WorldDocs </title>
+		<meta charset = "utf-8">
+		<meta name = 'viewport'  content='width=device-width, initial-scale=1.0'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="sidebar">
+			<a href="index.html">
+				<div class="navigation"> Quick intro </div>
+			</a>
+			<a href="installation.html">
+				<div class="navigation"> Installation process </div>
+			</a>
+			<a href="quick_start.html">
+				<div class="navigation"> Quick start </div>
+			</a>
+			<a href="features.html">
+				<div class="navigation"> Language features </div>
+			</a>
+			<a href="hello world.html">
+				<div class="navigation active"> Hello world application </div>
+			</a>
+			<a href="basics.html">
+				<div class="navigation"> Language Basics </div>
+			</a>
+			<a href="calc.html">
+				<div class="navigation"> Simple calculator </div>
+			</a>
+			<a href="game.html">
+				<div class="navigation"> Number guessing </div>
+			</a>
+			<a href="ai.html">
+				<div class="navigation"> AI code </div>
+			</a>
+		</div>
+		
+		<div class="main_window">
+			<h1> First line of code </h1>
+			<hr>
+			<h2> 
+			   	Steps :		
+			</h2>
+			<ol>
+				<li style="display:list-item;">first write the command <b style="display:inline">"world"</b> to log in to the language </li>
+				<img src="imgs/world_command.jpg" width="300">
+				<li style="display:list-item;">The <b style = "display:inline">Now write <b style="display:inline">This 👇 </b> line of code</li>
+				<div class="code_snippet" dir="rtl">
+					<span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;"> "أهلا بالعالم" </span>)
+				</div>
+				<li>Result : <b style="display:inline">أهلا بالعالم</b>. <br> <br> <span>if you changed the language to English it will be like : <span></li>
+				<div class="code_snippet" dir="ltr">
+					<span style="color:purple;display:inline;">print</span>(<span style="color:green;display:inline;"> "Hello world" </span>)
+				</div>
+				<li>Result : <b style="display:inline">Hello world</b>. <br> <br> <span>so, as you can change the keywords and function names, the pattern is  : <span></li>
+				<div class="code_snippet" dir="ltr">
+					<span style="color:purple;display:inline;">function_name</span>(<span style="color:green;display:inline;"> "parameter" </span>)
+				</div>
+			</ol>
+			<h2> 
+			   	Run the program :		
+			</h2>
+			<ol>
+				<li>to run the file, we use a builtin function called <b style="display:inline">"world"</b><span></li>
+				<div class="code_snippet" dir="ltr">
+					<span style="color:purple;display:inline;">world</span>(<span style="color:green;display:inline;"> "Filename.world" </span>)
+				</div>
+				<br>
+				<hr>
+				<img src="imgs/run.png" width="300">
+			</ol>
+			<div style="display:flex;justify-content:space-between">
+				<div onclick = "window.open('features.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+					⬅ Prev 
+				</div>
+				
+				<div onclick = "window.open('basics.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+					Next ➡
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

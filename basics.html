@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> WorldDocs </title>
+		<meta charset = "utf-8">
+		<meta name = 'viewport'  content='width=device-width, initial-scale=1.0'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="sidebar">
+			<a href="index.html">
+				<div class="navigation"> Quick intro </div>
+			</a>
+			<a href="installation.html">
+				<div class="navigation"> Installation process </div>
+			</a>
+			<a href="quick_start.html">
+				<div class="navigation"> Quick start </div>
+			</a>
+			<a href="features.html">
+				<div class="navigation"> Language features </div>
+			</a>
+			<a href="hello world.html">
+				<div class="navigation"> Hello world application </div>
+			</a>
+			<a href="basics.html">
+				<div class="navigation active"> Language Basics </div>
+			</a>
+			<a href="calc.html">
+				<div class="navigation"> Simple calculator </div>
+			</a>
+			<a href="game.html">
+				<div class="navigation"> Number guessing </div>
+			</a>
+			<a href="ai.html">
+				<div class="navigation"> AI code </div>
+			</a>
+		</div>
+		
+		<div class="main_window">
+			<h1> Language basics </h1>
+			<br>
+			<hr>
+			<br>
+			<p style="color:red"> 
+				WorldLang's configurable keywords and built-in function names provide users with flexibility, 
+				allowing them to tailor the language to their specific needs while maintaining its core principles. 
+				Additionally, as a multilingual programming language, WorldLang offers users the option to switch between different languages according to their preferences. 
+				Although Arabic is the default language, users can easily select their preferred language, 
+				ensuring a personalized and comfortable programming experience. This versatility empowers users to code in a language that resonates with them, 
+				enhancing their overall programming journey.
+			</p>
+			<br>
+			<hr>
+			<br>
+			<h2 style="text-align:center;"> 
+			   	Outputs :		
+			</h2>
+			<br>
+			<hr>
+			<h3>Syntax :</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:purple;display:inline;">function_name</span>(<span style="color:green;display:inline;"> "parameter" </span>)
+				</div>
+				<h3>Example :</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;"> "أهلا بالعالم" </span>)
+				</div>
+				<br>
+				<hr>
+				<br>
+			<h2 style="text-align:center;"> 
+			   	Variables :		
+			</h2>
+			<br>
+			<hr>
+			<h3>Syntax :</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:orange;display:inline;">var/&ltkeyword name&gt </span> variablename =  &ltvalue&gt
+				</div>
+			<h3> Dynamic typing : </h3>
+				<div class="code_snippet" dir="rtl">
+					<span style="color:orange;display:inline;">متغير</span> س = <span style="color:green;display:inline;"> "أهلا بالعالم" </span> <br>
+					<span style="color:orange;display:inline;">متغير</span> ص = <span style="color:blue;display:inline;"> 100 </span>
+				</div>
+				
+			<h3> Example : </h3>
+				<div class="code_snippet" dir="rtl">
+					<span style="color:orange;display:inline;">متغير</span> س = <span style="color:blue;display:inline;"> 10 </span><br>
+					<span style="color:orange;display:inline;">متغير</span> ص = <span style="color:blue;display:inline;"> 5 </span><br>
+					<span style="color:purple;display:inline;">طباعة</span>(س + ص)
+				</div>
+			<br>
+			<hr>
+			<br>
+			<h2 style="text-align:center;"> 
+			   	User input :		
+			</h2>
+			<br>
+			<hr>
+			<h3>Syntax :</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:purple;display:inline;">function_name</span>()
+				</div>
+			<h3>Example : text input</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:purple;display:inline;">استقبل</span>()<br>
+					<span style="color:purple;display:inline;">استقبل_رقم</span>()
+					<br>
+					<hr>
+					<br>
+					<span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;"> "أدخل اسمك :" </span>)<br>
+					<span style="color:orange;display:inline;">متغير</span> الاسم = <span style="color:purple;display:inline;"> استقبل</span>()<br>
+					<span style="color:purple;display:inline;">طباعة</span>(الاسم)<br>
+				</div>
+			<h3>Example : number input</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:purple;display:inline;">استقبل</span>()<br>
+					<span style="color:purple;display:inline;">استقبل_رقم</span>()
+					<br>
+					<hr>
+					<br>
+					<span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;"> "مجموع رقمين :" </span>)<br>
+					<span style="color:orange;display:inline;">متغير</span> الرقم_الأول = <span style="color:purple;display:inline;"> استقبل_رقم</span>()<br>
+					<span style="color:orange;display:inline;">متغير</span> الرقم الثاني = <span style="color:purple;display:inline;"> استقبل_رقم</span>()<br>
+					<span style="color:purple;display:inline;">طباعة</span>(الرقم_الأول + الرقم الثاني)<br>
+				</div>
+				<br>
+				<hr>
+				<br>
+				<h2 style="text-align:center;"> 
+					Conditions :		
+				</h2>
+				<br>
+				<hr>
+				<h3>Syntax : inline conditions</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:orange;display:inline;">if</span> condition <span style="color:orange;display:inline;">do</span> something
+				</div>
+				<h3>Example : inline conditions</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:orange;display:inline;">اذا</span> <span style="color:blue;display:inline">5</span> &lt <span style="color:blue;display:inline">10</span> <span style="color:orange;display:inline;">نفذ</span> <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"5 اصغر من 10"</span>)
+				</div>
+				
+				<h3>Syntax : multiline conditions</h3> 
+				<div class="code_snippet" dir="ltr">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">if</span> condition <span style="color:orange;display:inline;">do</span> 
+  something
+<span style="color:orange;display:inline;">elif </span>condition <span style="color:orange;display:inline;">do</span>
+  something
+<span style="color:orange;display:inline;">else </span>
+  something
+<span style="color:orange;display:inline;">end </span>
+					</pre>
+				</div>
+				<h3>Example : multiline conditions</h3> 
+				<div class="code_snippet" dir="rtl">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">اذا</span> <span style="color:blue;display:inline">5</span> &gt <span style="color:blue;display:inline">10</span> <span style="color:orange;display:inline;">نفذ</span> 
+  <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"5 اصغر من 10"</span>)
+<span style="color:orange;display:inline;">أما_اذا </span><span style="color:blue;display:inline">5</span> &lt <span style="color:blue;display:inline">10</span> <span style="color:orange;display:inline;">نفذ</span>
+  <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"5 اكبر من 10"</span>)
+<span style="color:orange;display:inline;">والا </span>
+  <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"5 تساوي 10"</span>)
+<span style="color:orange;display:inline;">نهاية </span>
+					</pre>
+				</div>
+								<br>
+				<hr>
+				<br>
+				<h2 style="text-align:center;"> 
+					Loops :		
+				</h2>
+				<br>
+				<hr>
+				<h3>Syntax : inline for loops</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:orange;display:inline;">for</span> name = value1 <span style="color:orange;display:inline;">to</span> value2 <span style="color:orange;display:inline;">do</span> something 
+				</div>
+				<h3>Example : inline for loops</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:orange;display:inline;">من</span> ا = <span style="color:blue;display:inline">0</span> <span style="color:orange;display:inline;">الي</span> <span style="color:blue;display:inline">10</span> <span style="color:orange;display:inline;">نفذ</span> <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"أهلا بالعالم"</span>)
+				</div>
+				
+				<h3>Syntax : multiline for loops</h3> 
+				<div class="code_snippet" dir="ltr">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">for</span> name = value1 <span style="color:orange;display:inline;">to</span> value2 <span style="color:orange;display:inline;">do</span> 
+  something
+  <span style="color:orange;display:inline;">if </span>condition <span style="color:orange;display:inline;">do</span>
+    <span style="color:orange;display:inline;">break/continue</span>
+  <span style="color:orange;display:inline;">else </span>
+    <span style="color:orange;display:inline;">break/continue</span>
+  <span style="color:orange;display:inline;">end</span>
+<span style="color:orange;display:inline;">end</span>
+					</pre>
+				</div>
+				<h3>Example : multiline for loops</h3> 
+				<div class="code_snippet" dir="rtl">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">من</span> ا =  <span style="color:blue;display:inline">0</span> <span style="color:orange;display:inline;">الي</span> <span style="color:blue;display:inline">10</span> <span style="color:orange;display:inline;">نفذ</span> 
+  <span style="color:purple;display:inline;">طباعة </span>(ا)
+  <span style="color:orange;display:inline;">اذا</span> ا == <span style="color:blue;display:inline">5</span><span style="color:orange;display:inline;"> نفذ</span>
+    <span style="color:orange;display:inline;">توقف </span>
+  <span style="color:orange;display:inline;">نهاية </span>
+<span style="color:orange;display:inline;">نهاية </span>
+					</pre>
+				</div>
+				<h3>Example : looping on a list</h3> 
+				<div class="code_snippet" dir="rtl">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">متغير</span> ق =  [<span style="color:blue;display:inline">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</span>]
+<span style="color:orange;display:inline;">من</span> ا = <span style="color:blue;display:inline">0</span> <span style="color:orange;display:inline;">الي</span> <span style="color:purple;display:inline;">حجم</span>(ق) <span style="color:orange;display:inline;">نفذ</span> <span style="color:purple;display:inline;">طباعة</span>(ق/ا)
+					</pre>
+				</div>
+				
+				<h2> While loops : </h2>
+				<br>
+				<h3>Syntax : inline while loops</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:orange;display:inline;">while</span> condition <span style="color:orange;display:inline;">do</span> something
+				</div>
+				<h3>Example : inline while loops</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:orange;display:inline;">بينما</span> <span style="color:orange;display:inline;">صحيح</span> <span style="color:orange;display:inline;">نفذ</span> <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"أهلا بالعالم"</span>)
+				</div>
+				
+				<h3>Syntax : multiline while loops</h3> 
+				<div class="code_snippet" dir="ltr">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">while</span> condition <span style="color:orange;display:inline;">do</span> 
+  something
+<span style="color:orange;display:inline;">end </span>
+					</pre>
+				</div>
+				<h3>Example : multiline while loops</h3> 
+				<div class="code_snippet" dir="rtl">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">متغير</span> ب = <span style="color:blue;display:inline">0</span> 
+<span style="color:orange;display:inline;">بينما </span> ب &lt <span style="color:blue;display:inline">10</span> <span style="color:orange;display:inline;">نفذ</span>
+  <span style="color:purple;display:inline;">طباعة</span>(<span style="color:green;display:inline;">"ب اصغر من 10"</span>)
+  <span style="color:orange;display:inline;">متغير</span> ب = ب + <span style="color:blue;display:inline">1</span> 
+<span style="color:orange;display:inline;">نهاية </span>
+					</pre>
+				</div>
+						<br>
+				<hr>
+				<br>
+				<h2 style="text-align:center;"> 
+					Functions :		
+				</h2>
+				<br>
+				<hr>
+				<h3>Syntax : inline functions</h3> 
+				<div class="code_snippet" dir="ltr">
+					<span style="color:orange;display:inline;">func</span> function_name(parameters)<span style="color:orange;display:inline;"> -></span> output
+				</div>
+				<h3>Example : inline functions</h3> 
+				<div class="code_snippet" dir="rtl">
+					<span style="color:orange;display:inline;">دالة</span> أضف_واحد(س)<span style="color:orange;display:inline;"> -></span> س + 1
+				</div>
+				
+				<h3>Syntax : multiline functions</h3> 
+				<div class="code_snippet" dir="ltr">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">func</span> function_name(parameters) 
+  <span style="color:orange;display:inline;">return</span> something
+<span style="color:orange;display:inline;">end </span>
+					</pre>
+				</div>
+				<h3>Example : multiline while loops</h3> 
+				<div class="code_snippet" dir="rtl">
+					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span style="color:orange;display:inline;">دالة</span> اضف_واحد(س) 
+  <span style="color:orange;display:inline;">ارجاع</span> س + 1
+<span style="color:orange;display:inline;">نهاية </span>
+					</pre>
+				</div>
+			<div style="display:flex;justify-content:space-between">
+				<div onclick = "window.open('hello world.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+					⬅ Prev 
+				</div>
+				
+				<div onclick = "window.open('calc.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+					Next ➡
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
