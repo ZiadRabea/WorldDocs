@@ -26,6 +26,22 @@ a{
 .active{
 	box-shadow:none;
 }
+.keyword{
+	color:orange;
+	display:inline;
+}
+.builtin_func{
+	color:purple;
+	display:inline;
+}
+.string{
+	color:green;
+	display:inline;
+}
+.int{
+	color:blue;
+	display:inline
+}
 .main_window{
 	width:79%;
 	float:right;
@@ -59,4 +75,15 @@ img{
 .main_window pre{
 	font-size:20px;
 	white-space: pre-wrap;
+}
+@media screen and (max-width: 900px){
+	.sidebar{
+		float: none;
+		width: 100%;
+	}
+
+	.main_window{
+		float: none;
+		width:100%;
+	}
 }
