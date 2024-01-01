@@ -67,9 +67,23 @@ a{
 	padding: 20px;
     background: #1e1e1e;
     border-radius: 20px;
+	position: relative;
     /* border: 5px groove silver; */
     color: white;
     box-shadow: inset 0px 3px 0px -1px #000, inset -3px 0px 0px -1px #fff, inset 0px -3px 0px -1px #fff, inset 3px 0px 0px -1px #000;
+}
+.run_btn{
+	padding: 10px;
+	color: white;
+	background: green;
+	font-weight: bold;
+	width: auto;
+	position: absolute;
+	top:10px;
+	left: 10px;
+}
+.run_btn:hover{
+	background: darkgreen;
 }
 img{
 	margin-bottom:10px !important;
