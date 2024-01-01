@@ -45,6 +45,15 @@ a{
 	color:blue;
 	display:inline !important
 }
+.text{
+	text-align: justify;
+	text-justify: inter-word;
+	color: white;
+}
+.white{
+	color:white;
+	font-weight: bold;
+}
 .main_window{
 	background: rgb(33 39 52);
     width: 79%;
@@ -61,7 +70,11 @@ a{
 }
 .main_window h1{
 	width:100%;
+	color:white;
 	text-align:center;
+}
+.main_window h2{
+	color:white
 }
 .main_window .code_snippet{
 	padding: 20px;
