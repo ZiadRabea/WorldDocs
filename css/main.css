@@ -28,19 +28,19 @@ a{
 }
 .keyword{
 	color:orange;
-	display:inline;
+	display:inline !important;
 }
 .builtin_func{
 	color:purple;
-	display:inline;
+	display:inline !important;
 }
 .string{
 	color:green;
-	display:inline;
+	display:inline !important;
 }
 .int{
 	color:blue;
-	display:inline
+	display:inline !important
 }
 .main_window{
 	width:79%;
