@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> WorldDocs </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/Lateef" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            /* Terminal Output Styling */
+            .terminal_output {
+                display: none;
+                background: #0d0e15;
+                border: 1px solid #333;
+                border-radius: 8px;
+                padding: 12px;
+                margin-top: 10px;
+                color: #00ff88;
+                font-family: 'Ubuntu', monospace;
+                font-size: 14px;
+                box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+            }
+            .terminal_header {
+                color: #888;
+                font-size: 11px;
+                border-bottom: 1px solid #222;
+                padding-bottom: 4px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="index.html">
+                <div class="navigation"> Quick intro </div>
+            </a>
+            <a href="installation.html">
+                <div class="navigation"> Installation process </div>
+            </a>
+            <a href="quick_start.html">
+                <div class="navigation"> Quick start </div>
+            </a>
+            <a href="features.html">
+                <div class="navigation"> Language features </div>
+            </a>
+            <a href="hello_world.html">
+                <div class="navigation active"> Hello world application </div>
+            </a>
+            <a href="basics.html">
+                <div class="navigation"> Language Basics </div>
+            </a>
+            <a href="calc.html">
+                <div class="navigation"> Simple calculator </div>
+            </a>
+            <a href="game.html">
+                <div class="navigation"> Number guessing </div>
+            </a>
+            <a href="languages.html">
+                <div class="navigation"> Supported languages </div>
+            </a>
+            <a href="reference.html">
+                <div class="navigation"> Language references </div>
+            </a>
+            <a href="contributing.html">
+                <div class="navigation"> Contributing guide </div>
+            </a>
+        </div>
+        
+        <div class="main_window">
+            <h1> First line of code </h1>
+            <hr>
+            <h2> Steps : </h2>
+            <ol class="white">
+                <li style="display:list-item;">First write the command <b style="display:inline">"world"</b> to log in to the language interpreter</li>
+                <img src="imgs/world_command.jpg" width="300">
+                
+                <li style="display:list-item;">Now write this line of code:</li>
+                <div class="code_snippet" dir="rtl" style="font-family: Lateef">
+                    <button class="run_btn" onclick="toggleOutput('out1')">►</button>
+                    <span class="builtin_func">طباعة</span>(<span class="string"> "أهلا بالعالم" </span>)
+                </div>
+                <div id="out1" class="terminal_output" dir="rtl">
+                    <div class="terminal_header" dir="ltr">Terminal Output</div>
+                    <div>أهلا بالعالم</div>
+                </div>
+
+                <li style="margin-top:15px;">Result: <b style="display:inline">أهلا بالعالم</b>. <br><br> <span>If you set the language mode to English:</span></li>
+                <div class="code_snippet" dir="ltr" style="font-family: 'Ubuntu';">
+                    <button class="run_btn" style="right: 10px; left: unset;" onclick="toggleOutput('out2')">►</button>
+                    <span class="builtin_func">print</span>(<span class="string"> "Hello world" </span>)
+                </div>
+                <div id="out2" class="terminal_output" dir="ltr">
+                    <div class="terminal_header">Terminal Output</div>
+                    <div>Hello world</div>
+                </div>
+
+                <li style="margin-top:15px;">Result: <b style="display:inline">Hello world</b>. <br><br> <span>The underlying structure follows the function parameter pattern:</span></li>
+                <div class="code_snippet" dir="ltr" style="font-family: 'Ubuntu';">
+                    <span class="builtin_func">function_name</span>(<span class="string"> "parameter" </span>)
+                </div>
+            </ol>
+
+            <h2> Run the program : </h2>
+            <ol class="white">
+                <li>To execute a saved file, use the built-in <b style="display:inline">"world"</b> runner function:</li>
+                <div class="code_snippet" dir="ltr" style="font-family: 'Ubuntu';">
+                    <button class="run_btn" style="right: 10px; left: unset;" onclick="toggleOutput('out3')">►</button>
+                    <span class="builtin_func">world</span>(<span class="string"> "Filename.world" </span>)
+                </div>
+                <div id="out3" class="terminal_output" dir="ltr">
+                    <div class="terminal_header">Terminal Output</div>
+                    <div>Executing Filename.world...<br>[Process completed with exit code 0]</div>
+                </div>
+                
+                <br>
+                <hr>
+                <img src="imgs/run.png" width="300">
+            </ol>
+
+            <div style="display:flex;justify-content:space-between; margin-bottom:20px;">
+                <a href="features.html" style="width:48%;">
+                    <div style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+                        ⬅ Prev 
+                    </div>
+                </a>
+                
+                <a href="basics.html" style="width:48%;">
+                    <div style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+                        Next ➡
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            function toggleOutput(elementId) {
+                const outputElement = document.getElementById(elementId);
+                if (outputElement.style.display === "block") {
+                    outputElement.style.display = "none";
+                } else {
+                    outputElement.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

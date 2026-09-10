@@ -1,59 +1,176 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title> WorldDocs </title>
-		<meta charset = "utf-8">
-		<meta name = 'viewport'  content='width=device-width, initial-scale=1.0'>
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<div class="sidebar">
-			<a href="index.html">
-				<div class="navigation"> Quick intro </div>
-			</a>
-			<a href="installation.html">
-				<div class="navigation"> Installation process </div>
-			</a>
-			<a href="quick_start.html">
-				<div class="navigation"> Quick start </div>
-			</a>
-			<a href="features.html">
-				<div class="navigation"> Language features </div>
-			</a>
-			<a href="hello world.html">
-				<div class="navigation"> Hello world application </div>
-			</a>
-			<a href="basics.html">
-				<div class="navigation"> Language Basics </div>
-			</a>
-			<a href="calc.html">
-				<div class="navigation active"> Simple calculator </div>
-			</a>
-			<a href="game.html">
-				<div class="navigation"> Number guessing </div>
-			</a>
-			<a href="ai.html">
-				<div class="navigation"> AI code </div>
-			</a>
-		</div>
-		
-		<div class="main_window">
-			<h1> Simple calculator </h1>
-			<hr>
-			<h2> 
-			   	Calculator app :		
-			</h2>
-			<img src="imgs/calc.jpg" width="100%">
-			<div style="display:flex;justify-content:space-between">
-				<div onclick = "window.open('basics.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
-					⬅ Prev 
-				</div>
-				
-				<div onclick = "window.open('game.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
-					Next ➡
-				</div>
-			</div>
-		</div>
-	</body>
+    <head>
+        <title> WorldDocs </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.cdnfonts.com/css/Cairo" rel="stylesheet">
+        <style>
+            .terminal_output {
+                display: none;
+                background: #0e1117;
+                border: 1px solid #2d3748;
+                border-radius: 8px;
+                padding: 12px 16px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                color: #00ff88;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 14px;
+                box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+                white-space: pre-wrap;
+            }
+            .terminal_header {
+                color: #718096;
+                font-size: 11px;
+                border-bottom: 1px solid #2d3748;
+                padding-bottom: 4px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="index.html">
+                <div class="navigation"> Quick intro </div>
+            </a>
+            <a href="installation.html">
+                <div class="navigation"> Installation process </div>
+            </a>
+            <a href="quick_start.html">
+                <div class="navigation"> Quick start </div>
+            </a>
+            <a href="features.html">
+                <div class="navigation"> Language features </div>
+            </a>
+            <a href="hello_world.html">
+                <div class="navigation"> Hello world application </div>
+            </a>
+            <a href="basics.html">
+                <div class="navigation"> Language Basics </div>
+            </a>
+            <a href="calc.html">
+                <div class="navigation active"> Simple calculator </div>
+            </a>
+            <a href="game.html">
+                <div class="navigation"> Number guessing </div>
+            </a>
+            <a href="languages.html">
+                <div class="navigation"> Supported languages </div>
+            </a>
+            <a href="reference.html">
+                <div class="navigation"> Language references </div>
+            </a>
+            <a href="contributing.html">
+                <div class="navigation"> Contributing guide </div>
+            </a>
+        </div>
+        
+        <div class="main_window">
+            <h1> Simple calculator </h1>
+            <br>
+            <hr>
+            <br>
+            <h2> Calculator app : </h2>
+            <br>
+            <p style="color:rgb(226, 239, 252)">
+                This simple calculator reads two numbers from user input along with an operation sign (+, -, *, /) and outputs the calculated result using conditional execution.
+            </p>
+            <br>
+            
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runCalcEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">متغير</span> الرقم_الأول = <span class="builtin_func">استقبل_رقم</span>(<span class="string">"أدخل الرقم الأول: "</span>)
+<span class="keyword">متغير</span> العلامة = <span class="builtin_func">استقبل</span>(<span class="string">"أدخل العلامة (+, -, *, /): "</span>)
+<span class="keyword">متغير</span> الرقم_الثاني = <span class="builtin_func">استقبل_رقم</span>(<span class="string">"أدخل الرقم الثاني: "</span>)
+
+<span class="keyword">اذا</span> العلامة == <span class="string">"+"</span> <span class="keyword">نفذ</span>
+    <span class="builtin_func">طباعة</span>(الرقم_الأول + الرقم_الثاني)
+<span class="keyword">أما_اذا</span> العلامة == <span class="string">"-"</span> <span class="keyword">نفذ</span>
+    <span class="builtin_func">طباعة</span>(الرقم_الأول - الرقم_الثاني)
+<span class="keyword">أما_اذا</span> العلامة == <span class="string">"*"</span> <span class="keyword">نفذ</span>
+    <span class="builtin_func">طباعة</span>(الرقم_الأول * الرقم_الثاني)
+<span class="keyword">أما_اذا</span> العلامة == <span class="string">"/"</span> <span class="keyword">نفذ</span>
+    <span class="keyword">اذا</span> الرقم_الثاني != <span class="int">0</span> <span class="keyword">نفذ</span>
+        <span class="builtin_func">طباعة</span>(الرقم_الأول / الرقم_الثاني)
+    <span class="keyword">والا</span>
+        <span class="builtin_func">طباعة</span>(<span class="string">"خطأ: لا يمكن القسمة على صفر"</span>)
+    <span class="keyword">نهاية</span>
+<span class="keyword">والا</span>
+    <span class="builtin_func">طباعة</span>(<span class="string">"علامة غير صالحة"</span>)
+<span class="keyword">نهاية</span>
+                </pre>
+            </div>
+            
+            <div id="terminal_calc" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_calc_res"></div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <div style="display:flex;justify-content:space-between">
+                <div onclick="window.open('basics.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+                    ⬅ Prev 
+                </div>
+                
+                <div onclick="window.open('game.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+                    Next ➡
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function runCalcEx() {
+                const term = document.getElementById('terminal_calc');
+                const target = document.getElementById('term_calc_res');
+
+                const n1Str = prompt("أدخل الرقم الأول:", "12");
+                if (n1Str === null) return;
+
+                const op = prompt("أدخل العلامة (+, -, *, /):", "+");
+                if (op === null) return;
+
+                const n2Str = prompt("أدخل الرقم الثاني:", "8");
+                if (n2Str === null) return;
+
+                const n1 = parseFloat(n1Str);
+                const n2 = parseFloat(n2Str);
+                let result = "";
+
+                if (isNaN(n1) || isNaN(n2)) {
+                    result = "خطأ: يرجى إدخال أرقام صالحة";
+                } else if (op === "+") {
+                    result = n1 + n2;
+                } else if (op === "-") {
+                    result = n1 - n2;
+                } else if (op === "*") {
+                    result = n1 * n2;
+                } else if (op === "/") {
+                    if (n2 !== 0) {
+                        result = n1 / n2;
+                    } else {
+                        result = "خطأ: لا يمكن القسمة على صفر";
+                    }
+                } else {
+                    result = "علامة غير صالحة";
+                }
+
+                const outputStr = "أدخل الرقم الأول: " + n1Str + "<br>" +
+                                  "أدخل العلامة (+, -, *, /): " + op + "<br>" +
+                                  "أدخل الرقم الثاني: " + n2Str + "<br>" +
+                                  "النتيجة: " + result;
+
+                target.innerHTML = outputStr;
+                term.style.display = "block";
+            }
+        </script>
+    </body>
 </html>

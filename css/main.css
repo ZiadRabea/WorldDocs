@@ -127,3 +127,123 @@ img{
 		width:100%;
 	}
 }
+code {
+	background: #1e1e1e;
+	color: #00ff88;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-family: monospace;
+	display: inline !important;
+}
+
+/* =========================
+   Supported Languages
+========================= */
+
+.languages-grid{
+    width: 80% !important;
+    margin: 0 auto !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+
+    padding: 10px 0 25px;
+}
+
+.language-card{
+    width: 100% !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center;
+
+    padding: 16px;
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(45, 52, 70, 0.95),
+        rgba(28, 33, 45, 0.95)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+
+    cursor: default;
+}
+
+.language-card:hover{
+    transform: translateY(-5px);
+
+    border-color: rgba(0, 255, 136, 0.65);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(0, 255, 136, 0.08);
+}
+
+.language-icon{
+    width: 48px !important;
+    height: 48px !important;
+
+    margin: 0 14px 0 0 !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: rgba(0, 255, 136, 0.1);
+
+    border: 1px solid rgba(0, 255, 136, 0.2);
+
+    color: #00ff88;
+
+    font-family: "Cairo", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.language-info{
+    width: auto !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.language-info strong{
+    width: auto !important;
+    margin: 0 !important;
+
+    display: block !important;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.language-info span{
+    width: auto !important;
+    margin: 0 !important;
+
+    display: block !important;
+
+    color: #9da7b8;
+
+    font-family: "Cairo", Arial, sans-serif;
+    font-size: 13px;
+}

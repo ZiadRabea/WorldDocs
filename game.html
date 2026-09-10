@@ -1,59 +1,188 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title> WorldDocs </title>
-		<meta charset = "utf-8">
-		<meta name = 'viewport'  content='width=device-width, initial-scale=1.0'>
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<div class="sidebar">
-			<a href="index.html">
-				<div class="navigation"> Quick intro </div>
-			</a>
-			<a href="installation.html">
-				<div class="navigation"> Installation process </div>
-			</a>
-			<a href="quick_start.html">
-				<div class="navigation"> Quick start </div>
-			</a>
-			<a href="features.html">
-				<div class="navigation"> Language features </div>
-			</a>
-			<a href="hello world.html">
-				<div class="navigation"> Hello world application </div>
-			</a>
-			<a href="basics.html">
-				<div class="navigation"> Language Basics </div>
-			</a>
-			<a href="calc.html">
-				<div class="navigation"> Simple calculator </div>
-			</a>
-			<a href="game.html">
-				<div class="navigation active"> Number guessing </div>
-			</a>
-			<a href="ai.html">
-				<div class="navigation"> AI code </div>
-			</a>
-		</div>
-		
-		<div class="main_window">
-			<h1> Simple Game </h1>
-			<hr>
-			<h2> 
-			   	Simpe game :		
-			</h2>
-			<img src="imgs/game.jpg" width="100%">
-			<div style="display:flex;justify-content:space-between">
-				<div onclick = "window.open('calc.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
-					⬅ Prev 
-				</div>
-				
-				<div onclick = "window.open('ai.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
-					Next ➡
-				</div>
-			</div>
-		</div>
-	</body>
+    <head>
+        <title> WorldDocs </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.cdnfonts.com/css/Cairo" rel="stylesheet">
+        <style>
+            .terminal_output {
+                display: none;
+                background: #0e1117;
+                border: 1px solid #2d3748;
+                border-radius: 8px;
+                padding: 12px 16px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                color: #00ff88;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 14px;
+                box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+                white-space: pre-wrap;
+            }
+            .terminal_header {
+                color: #718096;
+                font-size: 11px;
+                border-bottom: 1px solid #2d3748;
+                padding-bottom: 4px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="index.html">
+                <div class="navigation"> Quick intro </div>
+            </a>
+            <a href="installation.html">
+                <div class="navigation"> Installation process </div>
+            </a>
+            <a href="quick_start.html">
+                <div class="navigation"> Quick start </div>
+            </a>
+            <a href="features.html">
+                <div class="navigation"> Language features </div>
+            </a>
+            <a href="hello_world.html">
+                <div class="navigation"> Hello world application </div>
+            </a>
+            <a href="basics.html">
+                <div class="navigation"> Language Basics </div>
+            </a>
+            <a href="calc.html">
+                <div class="navigation"> Simple calculator </div>
+            </a>
+            <a href="game.html">
+                <div class="navigation active"> Number guessing </div>
+            </a>
+            <a href="languages.html">
+                <div class="navigation"> Supported languages </div>
+            </a>
+            <a href="reference.html">
+                <div class="navigation"> Language references </div>
+            </a>
+            <a href="contributing.html">
+                <div class="navigation"> Contributing guide </div>
+            </a>
+        </div>
+        
+        <div class="main_window">
+            <h1> Simple Game </h1>
+            <br>
+            <hr>
+            <br>
+            <h2> Simple game : </h2>
+            <br>
+            <p style="color:rgb(226, 239, 252)">
+                A two-player Russian roulette style guessing game written in WorldLang. It imports the <span style="color:#00ff88;">Random</span> module to generate a secret target number dynamically, passes prompt messages directly inside <span style="color:#00ff88;">استقبل_رقم</span>, and utilizes newline sequence escapes (<span style="color:#00ff88;">\n</span>).
+            </p>
+            <br>
+            
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runGameEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">استدعاء</span>(<span class="string">"Random"</span>)
+
+<span class="builtin_func">طباعة</span>(<span class="string">"===================="</span>)
+<span class="keyword">متغير</span> اللاعب_النشط = <span class="int">1</span>
+<span class="keyword">متغير</span> الرقم_العشوائي = <span class="builtin_func">توليد_رقم_عشوائي</span>(<span class="int">1</span>, <span class="int">10</span>)
+
+<span class="keyword">بينما</span> <span class="keyword">صحيح</span> <span class="keyword">نفذ</span>
+    <span class="keyword">اذا</span> اللاعب_النشط == <span class="int">1</span> <span class="keyword">نفذ</span>
+        <span class="keyword">متغير</span> الرقم_الأول = <span class="builtin_func">استقبل_رقم</span>(<span class="string">"اللاعب الأول\nأدخل رقم من 1 الي 10 : "</span>)
+        <span class="keyword">اذا</span> الرقم_الأول == الرقم_العشوائي <span class="keyword">نفذ</span>
+            <span class="builtin_func">طباعة</span>(<span class="string">"بالأسف، لقد خسرت اللعبة، حظ موفق المرة القادمة :)\nاللاعب الثاني يفوز!"</span>)
+            <span class="keyword">توقف</span>
+        <span class="keyword">والا</span>
+            <span class="builtin_func">طباعة</span>(<span class="string">"أحسنت :)"</span>)
+            <span class="keyword">متغير</span> اللاعب_النشط = <span class="int">2</span>
+        <span class="keyword">نهاية</span>
+    <span class="keyword">أما_اذا</span> اللاعب_النشط == <span class="int">2</span> <span class="keyword">نفذ</span>
+        <span class="keyword">متغير</span> الرقم_الثاني = <span class="builtin_func">استقبل_رقم</span>(<span class="string">"اللاعب الثاني\nأدخل رقم من 1 الي 10 : "</span>)
+        <span class="keyword">اذا</span> الرقم_الثاني == الرقم_العشوائي <span class="keyword">نفذ</span>
+            <span class="builtin_func">طباعة</span>(<span class="string">"بالأسف، لقد خسرت اللعبة، حظ موفق المرة القادمة :)\nاللاعب الأول يفوز!"</span>)
+            <span class="keyword">توقف</span>
+        <span class="keyword">والا</span>
+            <span class="builtin_func">طباعة</span>(<span class="string">"أحسنت :)"</span>)
+            <span class="keyword">متغير</span> اللاعب_النشط = <span class="int">1</span>
+        <span class="keyword">نهاية</span>
+    <span class="keyword">نهاية</span>
+<span class="keyword">نهاية</span>
+                </pre>
+            </div>
+            
+            <div id="terminal_game" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_game_res"></div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <div style="display:flex;justify-content:space-between">
+                <div onclick="window.open('calc.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+                    ⬅ Prev 
+                </div>
+                
+                <div onclick="window.open('languages.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+                    Next ➡
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function runGameEx() {
+                const term = document.getElementById('terminal_game');
+                const target = document.getElementById('term_game_res');
+                
+                let outputLog = "====================<br>";
+                let activePlayer = 1;
+                const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+                while (true) {
+                    if (activePlayer === 1) {
+                        const inputStr = prompt("اللاعب الأول\nأدخل رقم من 1 الي 10 :", "5");
+                        if (inputStr === null) {
+                            outputLog += "[Game terminated by user]";
+                            break;
+                        }
+                        const num = parseInt(inputStr);
+                        outputLog += "اللاعب الأول<br>أدخل رقم من 1 الي 10 : " + num + "<br>";
+
+                        if (num === randomNumber) {
+                            outputLog += "بالأسف، لقد خسرت اللعبة، حظ موفق المرة القادمة :)<br>اللاعب الثاني يفوز!";
+                            break;
+                        } else {
+                            outputLog += "أحسنت :)<br><br>";
+                            activePlayer = 2;
+                        }
+                    } else if (activePlayer === 2) {
+                        const inputStr = prompt("اللاعب الثاني\nأدخل رقم من 1 الي 10 :", "3");
+                        if (inputStr === null) {
+                            outputLog += "[Game terminated by user]";
+                            break;
+                        }
+                        const num = parseInt(inputStr);
+                        outputLog += "اللاعب الثاني<br>أدخل رقم من 1 الي 10 : " + num + "<br>";
+
+                        if (num === randomNumber) {
+                            outputLog += "بالأسف، لقد خسرت اللعبة، حظ موفق المرة القادمة :)<br>اللاعب الأول يفوز!";
+                            break;
+                        } else {
+                            outputLog += "أحسنت :)<br><br>";
+                            activePlayer = 1;
+                        }
+                    }
+                }
+
+                target.innerHTML = outputLog;
+                term.style.display = "block";
+            }
+        </script>
+    </body>
 </html>

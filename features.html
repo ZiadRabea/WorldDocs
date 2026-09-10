@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<title> WorldDocs </title>
-		<meta charset = "utf-8">
-		<meta name = 'viewport'  content='width=device-width, initial-scale=1.0'>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
@@ -21,7 +20,7 @@
 			<a href="features.html">
 				<div class="navigation active"> Language features </div>
 			</a>
-			<a href="hello world.html">
+			<a href="hello_world.html">
 				<div class="navigation"> Hello world application </div>
 			</a>
 			<a href="basics.html">
@@ -33,34 +32,74 @@
 			<a href="game.html">
 				<div class="navigation"> Number guessing </div>
 			</a>
-			<a href="ai.html">
-				<div class="navigation"> AI code </div>
+			<a href="languages.html">
+				<div class="navigation"> Supported languages </div>
+			</a>
+			<a href="reference.html">
+				<div class="navigation"> Language references </div>
+			</a>
+			<a href="contributing.html">
+				<div class="navigation"> Contributing guide </div>
 			</a>
 		</div>
 		
 		<div class="main_window">
 			<h1> Basic commands </h1>
 			<hr>
-			<h2> 
-			   	Commands :		
-			</h2>
+			
+			<h2> Commands : </h2>
 			<ol class="white">
-				<li style="display:list-item;"><h3 style="display:inline;"> translator : </h3> The <b style = "display:inline">"translator"</b> command is designed to facilitate the translation of code snippets and programming language keywords between different programming languages. </li>
-				<img src="imgs/translator.jpg" width="300">
-				<li style="display:list-item;"><h3 style="display:inline;"> wcontroller : </h3> The <b style = "display:inline">"wcontroller"</b> command  empowers users to modify language keywords and customize them according to their preferences, thereby creating a personalized programming language experience. This feature grants users a sense of ownership and allows them to work with familiar terminology that aligns with their individual preferences.</li>
-				<img src="imgs/wcontroller.jpg" width="300">
-				<li style="display:list-item;"><h3 style="display:inline;"> world : </h3> The <b style = "display:inline">"world"</b> command enables you to log into the language and start writing code.</li>
+				<li style="display:list-item;">
+					<h3 style="display:inline;"> world : </h3> 
+					The <b class="keyword">"world"</b> command enables you to log into the language and start writing code.
+				</li>
 				<img src="imgs/world_command.jpg" width="300">
-				<h2 style="color:black"> Are you ready to write your first line of code? </b> </h2>
+
+				<li style="display:list-item;">
+					<h3 style="display:inline;"> setlang : </h3> 
+					Configures the active keyword set for optimal execution speed. While WorldLang includes an embedded neural network to auto-detect source languages on the fly, explicitly setting your target language skips inference and speeds up processing time.
+					
+					<p class="white" style="margin-top:10px;">Explicit Language Mode:</p>
+					<div class="code_snippet">
+						<pre><span class="keyword">setlang</span> -> ArabicKW</pre>
+					</div>
+
+					<p class="white" style="margin-top:10px;">AI Auto-Detection Mode:</p>
+					<div class="code_snippet">
+						<pre><span class="keyword">setlang</span> -> <span class="string">""</span></pre>
+					</div>
+				</li>
 			</ol>
-			<div style="display:flex;justify-content:space-between">
-				<div onclick = "window.open('quick_start.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
-					⬅ Prev 
-				</div>
+
+			<br>
+			<h2> Built-in Functions : </h2>
+			<ol class="white">
+				<li style="display:list-item;">
+					<h3 style="display:inline;"> translate() : </h3> 
+					A built-in function designed to facilitate the translation of code snippets and programming language keywords between different supported languages.
+					
+					<p class="white" style="margin-top:10px;">Function Usage:</p>
+					<div class="code_snippet">
+						<pre><span class="builtin_func">translate</span>(<span class="string">"factorial.world"</span>, <span class="string">"English"</span>, <span class="string">"Chinese"</span>)</pre>
+					</div>
+				</li>
+			</ol>
+
+			<br>
+			<h2> Are you ready to write your first line of code? </h2>
+			
+			<div style="display:flex;justify-content:space-between; margin-bottom:20px;">
+				<a href="quick_start.html" style="width:48%;">
+					<div style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+						⬅ Prev 
+					</div>
+				</a>
 				
-				<div onclick = "window.open('hello world.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
-					Next ➡
-				</div>
+				<a href="hello_world.html" style="width:48%;">
+					<div style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+						Next ➡
+					</div>
+				</a>
 			</div>
 		</div>
 	</body>

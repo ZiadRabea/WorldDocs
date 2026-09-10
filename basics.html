@@ -1,360 +1,649 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title> WorldDocs </title>
-		<meta charset = "utf-8">
-		<meta name = 'viewport'  content='width=device-width, initial-scale=1.0'>
-		<link rel="stylesheet" href="css/main.css">
-		<link href="https://fonts.cdnfonts.com/css/Cairo" rel="stylesheet">
-	</head>
-	<body>
-		<div class="sidebar">
-			<a href="index.html">
-				<div class="navigation"> Quick intro </div>
-			</a>
-			<a href="installation.html">
-				<div class="navigation"> Installation process </div>
-			</a>
-			<a href="quick_start.html">
-				<div class="navigation"> Quick start </div>
-			</a>
-			<a href="features.html">
-				<div class="navigation"> Language features </div>
-			</a>
-			<a href="hello world.html">
-				<div class="navigation"> Hello world application </div>
-			</a>
-			<a href="basics.html">
-				<div class="navigation active"> Language Basics </div>
-			</a>
-			<a href="calc.html">
-				<div class="navigation"> Simple calculator </div>
-			</a>
-			<a href="game.html">
-				<div class="navigation"> Number guessing </div>
-			</a>
-			<a href="ai.html">
-				<div class="navigation"> AI code </div>
-			</a>
-		</div>
-		
-		<div class="main_window">
-			<h1> Language basics </h1>
-			<br>
-			<hr>
-			<br>
-			<p style="color:rgb(226, 239, 252)"> 
-				<span style="color: orange; display: inline; font-weight: bold;">Note : </span>WorldLang's configurable keywords and built-in function names provide users with flexibility, 
-				allowing them to tailor the language to their specific needs while maintaining its core principles. 
-				Additionally, as a multilingual programming language, WorldLang offers users the option to switch between different languages according to their preferences. 
-				Although Arabic is the default language, users can easily select their preferred language, 
-				ensuring a personalized and comfortable programming experience. This versatility empowers users to code in a language that resonates with them, 
-				enhancing their overall programming journey.
-			</p>
-			<br>
-			<hr>
-			<br>
-			<h2 style="text-align:center;"> 
-			   	Outputs :		
-			</h2>
-			<br>
-			<hr>
-			<h3>Syntax :</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span  class="builtin_func">function_name</span>(<span  class="string"> "parameter" </span>)
-				</div>
-				<h3>Example :</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(\'%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85\')/Arabic')">►</button>
-					<span  class="builtin_func">طباعة</span>(<span  class="string"> "أهلا بالعالم" </span>)
-				</div>
-				<br>
-				<hr>
-				<br>
-			<h2 style="text-align:center;"> 
-			   	Variables :		
-			</h2>
-			<br>
-			<hr>
-			<h3>Syntax :</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span  class="keyword">var/&ltkeyword name&gt </span> variablename =  &ltvalue&gt
-				</div>
-			<h3> Dynamic typing : </h3>
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<span  class="keyword">متغير</span> س = <span  class="string"> "أهلا بالعالم" </span> <br>
-					<span  class="keyword">متغير</span> ص = <span style="color:blue;display:inline;"> 100 </span>
-				</div>
-				
-			<h3> Example : </h3>
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%20%D8%B3%20=%2010%0A%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%20%D8%B5%20=%205%0A%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%D8%B3%20+%20%D8%B5)/Arabic')">►</button>
-					<span  class="keyword">متغير</span> س = <span style="color:blue;display:inline;"> 10 </span><br>
-					<span  class="keyword">متغير</span> ص = <span style="color:blue;display:inline;"> 5 </span><br>
-					<span  class="builtin_func">طباعة</span>(س + ص)
-				</div>
-			<br>
-			<hr>
-			<br>
-			<h2 style="text-align:center;"> 
-			   	User input :		
-			</h2>
-			<br>
-			<hr>
-			<h3>Syntax :</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span  class="builtin_func">function_name</span>()
-				</div>
-			<h3>Example : text input</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://ziadrabea.github.io/worldlanguage')">►</button>
-					<span  class="builtin_func">استقبل</span>()<br>
-					<span  class="builtin_func">استقبل_رقم</span>()
-					<br>
-					<hr>
-					<br>
-					<span  class="builtin_func">طباعة</span>(<span  class="string"> "أدخل اسمك :" </span>)<br>
-					<span  class="keyword">متغير</span> الاسم = <span  class="builtin_func"> استقبل</span>()<br>
-					<span  class="builtin_func">طباعة</span>(الاسم)<br>
-				</div>
-			<h3>Example : number input</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://ziadrabea.github.io/worldlanguage')">►</button>
-					<span  class="builtin_func">استقبل</span>()<br>
-					<span  class="builtin_func">استقبل_رقم</span>()
-					<br>
-					<hr>
-					<br>
-					<span  class="builtin_func">طباعة</span>(<span  class="string"> "مجموع رقمين :" </span>)<br>
-					<span  class="keyword">متغير</span> الرقم_الأول = <span  class="builtin_func"> استقبل_رقم</span>()<br>
-					<span  class="keyword">متغير</span> الرقم الثاني = <span  class="builtin_func"> استقبل_رقم</span>()<br>
-					<span  class="builtin_func">طباعة</span>(الرقم_الأول + الرقم الثاني)<br>
-				</div>
-				<br>
-				<hr>
-				<br>
-				<h2 style="text-align:center;"> 
-					Conditions :		
-				</h2>
-				<br>
-				<hr>
-				<h3>Syntax : inline conditions</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span  class="keyword">if</span> condition <span  class="keyword">do</span> something
-				</div>
-				<h3>Example : inline conditions</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D8%A7%D8%B0%D8%A7%205%20%3C%2010%20%D9%86%D9%81%D8%B0%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%225%20%D8%A7%D8%B5%D8%BA%D8%B1%20%D9%85%D9%86%2010%22)/Arabic')">►</button>
-					<span  class="keyword">اذا</span> <span  class="int">5</span> &lt <span  class="int">10</span> <span  class="keyword">نفذ</span> <span  class="builtin_func">طباعة</span>(<span  class="string">"5 اصغر من 10"</span>)
-				</div>
-				
-				<h3>Syntax : multiline conditions</h3> 
-				<div class="code_snippet" dir="ltr">
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
-<span  class="keyword">if</span> condition <span  class="keyword">do</span> 
+    <head>
+        <title> WorldDocs </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.cdnfonts.com/css/Cairo" rel="stylesheet">
+        <style>
+            /* Emulated Terminal Output Styling */
+            .terminal_output {
+                display: none;
+                background: #0e1117;
+                border: 1px solid #2d3748;
+                border-radius: 8px;
+                padding: 12px 16px;
+                margin-top: 10px;
+                color: #00ff88;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 14px;
+                box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+                white-space: pre-wrap;
+            }
+            .terminal_header {
+                color: #718096;
+                font-size: 11px;
+                border-bottom: 1px solid #2d3748;
+                padding-bottom: 4px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="index.html">
+                <div class="navigation"> Quick intro </div>
+            </a>
+            <a href="installation.html">
+                <div class="navigation"> Installation process </div>
+            </a>
+            <a href="quick_start.html">
+                <div class="navigation"> Quick start </div>
+            </a>
+            <a href="features.html">
+                <div class="navigation"> Language features </div>
+            </a>
+            <a href="hello_world.html">
+                <div class="navigation"> Hello world application </div>
+            </a>
+            <a href="basics.html">
+                <div class="navigation active"> Language Basics </div>
+            </a>
+            <a href="calc.html">
+                <div class="navigation"> Simple calculator </div>
+            </a>
+            <a href="game.html">
+                <div class="navigation"> Number guessing </div>
+            </a>
+            <a href="languages.html">
+                <div class="navigation"> Supported languages </div>
+            </a>
+            <a href="reference.html">
+                <div class="navigation"> Language references </div>
+            </a>
+            <a href="contributing.html">
+                <div class="navigation"> Contributing guide </div>
+            </a>
+        </div>
+        
+        <div class="main_window">
+            <h1> Language basics </h1>
+            <br>
+            <hr>
+            <br>
+            <p style="color:rgb(226, 239, 252)"> 
+                <span style="color: orange; display: inline; font-weight: bold;">Note : </span>WorldLang's configurable keywords and built-in function names provide users with flexibility, 
+                allowing them to tailor the language to their specific needs while maintaining its core principles. 
+                Additionally, as a multilingual programming language, WorldLang offers users the option to switch between different languages according to their preferences. 
+                Although Arabic is the default language, users can easily select their preferred language, 
+                ensuring a personalized and comfortable programming experience. This versatility empowers users to code in a language that resonates with them, 
+                enhancing their overall programming journey.
+            </p>
+            <br>
+            <hr>
+            <br>
+            <h2 style="text-align:center;"> Outputs : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="builtin_func">function_name</span>(<span class="string"> "parameter" </span>)
+            </div>
+            
+            <h3>Example :</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runOutputEx()">►</button>
+                <span class="builtin_func">طباعة</span>(<span class="string"> "أهلا بالعالم" </span>)
+            </div>
+            <div id="terminal_output_ex" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_text_output_ex"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Variables : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">var/&lt;keyword name&gt; </span> variablename = &lt;value&gt;
+            </div>
+            <h3> Dynamic typing : </h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <span class="keyword">متغير</span> س = <span class="string"> "أهلا بالعالم" </span> <br>
+                <span class="keyword">متغير</span> ص = <span style="color:blue;display:inline;"> 100 </span>
+            </div>
+                
+            <h3> Example : </h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runVarsEx()">►</button>
+                <span class="keyword">متغير</span> س = <span style="color:blue;display:inline;"> 10 </span><br>
+                <span class="keyword">متغير</span> ص = <span style="color:blue;display:inline;"> 5 </span><br>
+                <span class="builtin_func">طباعة</span>(س + ص)
+            </div>
+            <div id="terminal_vars_ex" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_text_vars_ex"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> User input : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="builtin_func">function_name</span>(<span class="string">"prompt_message"</span>)
+            </div>
+            
+            <h3>Example : text input</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runTextInputEx()">►</button>
+                <span class="keyword">متغير</span> الاسم = <span class="builtin_func">استقبل</span>(<span class="string">"أدخل اسمك : "</span>)<br>
+                <span class="builtin_func">طباعة</span>(الاسم)<br>
+            </div>
+            <div id="terminal_text_input" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_text_input_res"></div>
+            </div>
+
+            <h3>Example : number input</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runNumInputEx()">►</button>
+                <span class="keyword">متغير</span> الرقم_الأول = <span class="builtin_func">استقبل_رقم</span>(<span class="string">"أدخل الرقم الأول: "</span>)<br>
+                <span class="keyword">متغير</span> الرقم_الثاني = <span class="builtin_func">استقبل_رقم</span>(<span class="string">"أدخل الرقم الثاني: "</span>)<br>
+                <span class="builtin_func">طباعة</span>(الرقم_الأول + الرقم_الثاني)<br>
+            </div>
+            <div id="terminal_num_input" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_num_input_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Conditions : </h2>
+            <br>
+            <hr>
+            <h3>Syntax : inline conditions</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">if</span> condition <span class="keyword">do</span> something
+            </div>
+            <h3>Example : inline conditions</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runInlineCondEx()">►</button>
+                <span class="keyword">اذا</span> <span class="int">5</span> &lt; <span class="int">10</span> <span class="keyword">نفذ</span> <span class="builtin_func">طباعة</span>(<span class="string">"5 اصغر من 10"</span>)
+            </div>
+            <div id="terminal_inline_cond" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_inline_cond_res"></div>
+            </div>
+            
+            <h3>Syntax : multiline conditions</h3> 
+            <div class="code_snippet" dir="ltr">
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">if</span> condition <span class="keyword">do</span> 
   something
-<span  class="keyword">elif </span>condition <span  class="keyword">do</span>
+<span class="keyword">elif </span>condition <span class="keyword">do</span>
   something
-<span  class="keyword">else </span>
+<span class="keyword">else </span>
   something
-<span  class="keyword">end </span>
-					</pre>
-				</div>
-				<h3>Example : multiline conditions</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D8%A7%D8%B0%D8%A7%205%20%3C%2010%20%D9%86%D9%81%D8%B0%20%0A%20%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%225%20%D8%A7%D8%B5%D8%BA%D8%B1%20%D9%85%D9%86%2010%22)%0A%D8%A3%D9%85%D8%A7_%D8%A7%D8%B0%D8%A7%205%20%3E%2010%20%D9%86%D9%81%D8%B0%0A%20%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%225%20%D8%A7%D9%83%D8%A8%D8%B1%20%D9%85%D9%86%2010%22)%0A%D9%88%D8%A7%D9%84%D8%A7%20%0A%20%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%225%20%D8%AA%D8%B3%D8%A7%D9%88%D9%8A%2010%22)%0A%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20/Arabic')">►</button>
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
-<span  class="keyword">اذا</span> <span  class="int">5</span> &lt <span  class="int">10</span> <span  class="keyword">نفذ</span> 
-  <span  class="builtin_func">طباعة</span>(<span  class="string">"5 اصغر من 10"</span>)
-<span  class="keyword">أما_اذا </span><span  class="int">5</span> &gt <span  class="int">10</span> <span  class="keyword">نفذ</span>
-  <span  class="builtin_func">طباعة</span>(<span  class="string">"5 اكبر من 10"</span>)
-<span  class="keyword">والا </span>
-  <span  class="builtin_func">طباعة</span>(<span  class="string">"5 تساوي 10"</span>)
-<span  class="keyword">نهاية </span>
-					</pre>
-				</div>
-								<br>
-				<hr>
-				<br>
-				<h2 style="text-align:center;"> 
-					Loops :		
-				</h2>
-				<br>
-				<hr>
-				<h3>Syntax : inline for loops</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span  class="keyword">for</span> name = value1 <span  class="keyword">to</span> value2 <span  class="keyword">do</span> something 
-				</div>
-				<h3>Example : inline for loops</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D9%85%D9%86%20%D8%A7%20=%200%20%D8%A7%D9%84%D9%8A%2010%20%D9%86%D9%81%D8%B0%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%22%D8%A3%D9%87%D9%84%D8%A7%20%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%22)/Arabic')">►</button>
-					<span  class="keyword">من</span> ا = <span  class="int">0</span> <span  class="keyword">الي</span> <span  class="int">10</span> <span  class="keyword">نفذ</span> <span  class="builtin_func">طباعة</span>(<span  class="string">"أهلا بالعالم"</span>)
-				</div>
-				
-				<h3>Syntax : multiline for loops</h3> 
-				<div class="code_snippet" dir="ltr">
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
-<span  class="keyword">for</span> name = value1 <span  class="keyword">to</span> value2 <span  class="keyword">do</span> 
+<span class="keyword">end </span>
+                </pre>
+            </div>
+            <h3>Example : multiline conditions</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runMultiCondEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">اذا</span> <span class="int">5</span> &lt; <span class="int">10</span> <span class="keyword">نفذ</span> 
+  <span class="builtin_func">طباعة</span>(<span class="string">"5 اصغر من 10"</span>)
+<span class="keyword">أما_اذا </span><span class="int">5</span> &gt; <span class="int">10</span> <span class="keyword">نفذ</span>
+  <span class="builtin_func">طباعة</span>(<span class="string">"5 اكبر من 10"</span>)
+<span class="keyword">والا </span>
+  <span class="builtin_func">طباعة</span>(<span class="string">"5 تساوي 10"</span>)
+<span class="keyword">نهاية </span>
+                </pre>
+            </div>
+            <div id="terminal_multi_cond" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_multi_cond_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Loops : </h2>
+            <br>
+            <hr>
+            <h3>Syntax : inline for loops</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">for</span> name = value1 <span class="keyword">to</span> value2 <span class="keyword">do</span> something 
+            </div>
+            <h3>Example : inline for loops</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runInlineForEx()">►</button>
+                <span class="keyword">من</span> ا = <span class="int">0</span> <span class="keyword">الي</span> <span class="int">10</span> <span class="keyword">نفذ</span> <span class="builtin_func">طباعة</span>(<span class="string">"أهلا بالعالم"</span>)
+            </div>
+            <div id="terminal_inline_for" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_inline_for_res"></div>
+            </div>
+            
+            <h3>Syntax : multiline for loops</h3> 
+            <div class="code_snippet" dir="ltr">
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">for</span> name = value1 <span class="keyword">to</span> value2 <span class="keyword">do</span> 
   something
-  <span  class="keyword">if </span>condition <span  class="keyword">do</span>
-    <span  class="keyword">break/continue</span>
+  <span class="keyword">if </span>condition <span class="keyword">do</span>
+    <span class="keyword">break/continue</span>
   <span class="keyword">else </span>
     <span class="keyword">break/continue</span>
   <span class="keyword">end</span>
 <span class="keyword">end</span>
-					</pre>
-				</div>
-				<h3>Example : multiline for loops</h3> 		
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D9%85%D9%86%20%D8%A7%20=%200%20%D8%A7%D9%84%D9%8A%2010%20%D9%86%D9%81%D8%B0%20%0A%20%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%20(%D8%A7)%0A%20%20%D8%A7%D8%B0%D8%A7%20%D8%A7%20==%205%20%D9%86%D9%81%D8%B0%0A%20%20%20%20%D8%AA%D9%88%D9%82%D9%81%0A%20%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%0A%D9%86%D9%87%D8%A7%D9%8A%D8%A9/Arabic')">►</button>
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
-<span class="keyword">من</span> ا =  <span  class="int">0</span> <span class="keyword">الي</span> <span  class="int">10</span> <span  class="keyword">نفذ</span> 
-  <span  class="builtin_func">طباعة </span>(ا)
-  <span class="keyword">اذا</span> ا == <span  class="int">5</span><span class="keyword"> نفذ</span>
+                </pre>
+            </div>
+            <h3>Example : multiline for loops</h3>      
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runMultiForEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">من</span> ا =  <span class="int">0</span> <span class="keyword">الي</span> <span class="int">10</span> <span class="keyword">نفذ</span> 
+  <span class="builtin_func">طباعة </span>(ا)
+  <span class="keyword">اذا</span> ا == <span class="int">5</span><span class="keyword"> نفذ</span>
     <span class="keyword">توقف </span>
   <span class="keyword">نهاية </span>
 <span class="keyword">نهاية </span>
-					</pre>
-				</div>
-				<h3>Example : looping on a list</h3>
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%20%D9%82%20=%20[0,%201,%202,%203,%204,%205,%206,%207,%208,%209]%0A%0A%D9%85%D9%86%20%D8%A7%20=%200%20%D8%A7%D9%84%D9%8A%20%D8%AD%D8%AC%D9%85(%D9%82)%20%D9%86%D9%81%D8%B0%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%D8%A7)/Arabic')">►</button>
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
-<span class="keyword">متغير</span> ق =  [<span  class="int">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</span>]
-<span class="keyword">من</span> ا = <span  class="int">0</span> <span class="keyword">الي</span> <span  class="builtin_func">حجم</span>(ق) <span  class="keyword">نفذ</span> <span  class="builtin_func">طباعة</span>(ق/ا)
-					</pre>
-				</div>
-				
-				<h2> While loops : </h2>
-				<br>
-				<h3>Syntax : inline while loops</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span class="keyword">while</span> condition <span class="keyword">do</span> something
-				</div>
-				<h3>Example : inline while loops</h3>	
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.alert('Crash')">►</button>
-					<span class="keyword">بينما</span> <span class="keyword">صحيح</span> <span class="keyword">نفذ</span> <span  class="builtin_func">طباعة</span>(<span  class="string">"أهلا بالعالم"</span>)
-				</div>
-				
-				<h3>Syntax : multiline while loops</h3> 
-				<div class="code_snippet" dir="ltr">
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+                </pre>
+            </div>
+            <div id="terminal_multi_for" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_multi_for_res"></div>
+            </div>
+
+            <h3>Example : looping on a list</h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runListLoopEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">متغير</span> ق =  [<span class="int">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</span>]
+<span class="keyword">من</span> ا = <span class="int">0</span> <span class="keyword">الي</span> <span class="builtin_func">حجم</span>(ق) <span class="keyword">نفذ</span> <span class="builtin_func">طباعة</span>(ق/ا)
+                </pre>
+            </div>
+            <div id="terminal_list_loop" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_list_loop_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Dictionaries / Hash Tables : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">var</span> dict_name = { <span class="string">"key1"</span> : <span class="string">"value1"</span> , <span class="string">"key2"</span> : <span class="string">"value2"</span> }
+            </div>
+            
+            <h3>Example : accessing dictionary values</h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runSimpleDictEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">متغير</span> معلومات = {<span class="string">"الاسم"</span>: <span class="string">"زياد"</span>, <span class="string">"العمر"</span>: <span class="int">20</span>}
+<span class="builtin_func">طباعة</span>(معلومات/<span class="string">"الاسم"</span>)
+                </pre>
+            </div>
+            <div id="terminal_simple_dict" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_simple_dict_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> While loops : </h2>
+            <br>
+            <h3>Syntax : inline while loops</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">while</span> condition <span class="keyword">do</span> something
+            </div>
+            <h3>Example : inline while loops</h3>   
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runInlineWhileEx()">►</button>
+                <span class="keyword">بينما</span> <span class="keyword">صحيح</span> <span class="keyword">نفذ</span> <span class="builtin_func">طباعة</span>(<span class="string">"أهلا بالعالم"</span>)
+            </div>
+            <div id="terminal_inline_while" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_inline_while_res"></div>
+            </div>
+            
+            <h3>Syntax : multiline while loops</h3> 
+            <div class="code_snippet" dir="ltr">
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
 <span class="keyword">while</span> condition <span class="keyword">do</span> 
   something
 <span class="keyword">end </span>
-					</pre>
-				</div>
-				<h3>Example : multiline while loops</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%20%D8%A8%20=%200%20%0A%D8%A8%D9%8A%D9%86%D9%85%D8%A7%20%20%D8%A8%20%3C%2010%20%D9%86%D9%81%D8%B0%0A%20%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9(%22%D8%A8%20%D8%A7%D8%B5%D8%BA%D8%B1%20%D9%85%D9%86%2010%22)%0A%20%20%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%20%D8%A8%20=%20%D8%A8%20+%201%20%0A%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%0A/Arabic')">►</button>
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+                </pre>
+            </div>
+            <h3>Example : multiline while loops</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runMultiWhileEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
 <span class="keyword">متغير</span> ب = <span class="int">0</span> 
-<span class="keyword">بينما </span> ب &lt <span class="int">10</span> <span class="keyword">نفذ</span>
-  <span  class="builtin_func">طباعة</span>(<span class="string">"ب اصغر من 10"</span>)
+<span class="keyword">بينما </span> ب &lt; <span class="int">10</span> <span class="keyword">نفذ</span>
+  <span class="builtin_func">طباعة</span>(<span class="string">"ب اصغر من 10"</span>)
   <span class="keyword">متغير</span> ب = ب + <span class="int">1</span> 
 <span class="keyword">نهاية </span>
-					</pre>
-				</div>
-						<br>
-				<hr>
-				<br>
-				<h2 style="text-align:center;"> 
-					Functions :		
-				</h2>
-				<br>
-				<hr>
-				<h3>Syntax : inline functions</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span class="keyword">func</span> function_name(parameters)<span class="keyword"> -></span> output
-				</div>
-				<h3>Example : inline functions</h3> 
-					<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-						<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D8%AF%D8%A7%D9%84%D8%A9%20%D8%A3%D8%B6%D9%81_%D9%88%D8%A7%D8%AD%D8%AF(%D8%B3)%20-%3E%20%D8%B3%20+%201/Arabic')">►</button>
-						<span class="keyword">دالة</span> أضف_واحد(س)<span class="keyword"> -> </span> س + 1
-					</div>
-				
-				<h3>Syntax : multiline functions</h3> 
-				<div class="code_snippet" dir="ltr">
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+                </pre>
+            </div>
+            <div id="terminal_multi_while" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_multi_while_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Functions : </h2>
+            <br>
+            <hr>
+            <h3>Syntax : inline functions</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">func</span> function_name(parameters)<span class="keyword"> -&gt;</span> output
+            </div>
+            <h3>Example : inline functions</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runInlineFuncEx()">►</button>
+                <span class="keyword">دالة</span> أضف_واحد(س)<span class="keyword"> -&gt; </span> س + 1
+            </div>
+            <div id="terminal_inline_func" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_inline_func_res"></div>
+            </div>
+            
+            <h3>Syntax : multiline functions</h3> 
+            <div class="code_snippet" dir="ltr">
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
 <span class="keyword">func</span> function_name(parameters) 
   <span class="keyword">return</span> something
 <span class="keyword">end </span>
-					</pre>
-				</div>
-				<h3>Example : multiline functions</h3> 
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://worldenv.onrender.com/run/%D8%AF%D8%A7%D9%84%D8%A9%20%D8%A7%D8%B6%D9%81_%D9%88%D8%A7%D8%AD%D8%AF(%D8%B3)%20%0A%20%20%D8%A7%D8%B1%D8%AC%D8%A7%D8%B9%20%D8%B3%20+%201%0A%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20/Arabic')">►</button>
-					<pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+                </pre>
+            </div>
+            <h3>Example : multiline functions</h3> 
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runMultiFuncEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
 <span class="keyword">دالة</span> اضف_واحد(س) 
   <span class="keyword">ارجاع</span> س + 1
 <span class="keyword">نهاية </span>
-					</pre>
-				</div>
-				<br>
-				<hr>
-				<br>
-			<h2 style="text-align:center;"> 
-			   	Import Modules :		
-			</h2>
-			<br>
-			<hr>
-			<h3>Syntax :</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span class="keyword">Import/(Keyword_name) </span>(module_name) 
-				</div>
-			<h3> Example: </h3>
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://ziadrabea.github.io/worldlanguage')">►</button>
-					<span class="keyword">استدعاء</span> (<span  class="string"> "math.world" </span>) <br>
-				</div>
-				<br>
-			<hr>
-			<br>
-			<h2 style="text-align:center;"> 
-			   	Read files :		
-			</h2>
-			<br>
-			<hr>
-			<h3>Syntax :</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span class="builtin_func">function_name</span>(<span class="string"> "filename.ext" </span>)
-				</div>
-				<h3>Example :</h3>
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://ziadrabea.github.io/worldlanguage')">►</button>
-					<span class="keyword">متغير</span> س = <span  class="builtin_func">قراءة_ملف</span>(<span  class="string"> "test.txt" </span>)
-				</div>
-				<br>
-				<hr>
-				<br>
-			<h2 style="text-align:center;"> 
-			   	Write files :		
-			</h2>
-			<br>
-			<hr>
-			<h3>Syntax :</h3> 
-				<div class="code_snippet" dir="ltr">
-					<span  class="builtin_func">function_name</span>(<span  class="string"> "filename.ext" </span>, <span  class="string"> "content" </span>)
-				</div>
-				<h3>Example :</h3>
-				<div class="code_snippet" style="font-family:Cairo" dir="rtl">
-					<button class = "run_btn" onclick="window.open('https://ziadrabea.github.io/worldlanguage')">►</button>
-					<span  class="builtin_func">كتابة_ملف</span>(<span  class="string"> "text.txt" </span>, <span  class="string"> "Hello world" </span>)
-				</div>
-				<br>
-				<hr>
-				<br>
-				<div style="display:flex;justify-content:space-between">
-				<div onclick = "window.open('hello world.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
-					⬅ Prev 
-				</div>
-				
-				<div onclick = "window.open('calc.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
-					Next ➡
-				</div>
-			</div>
-		</div>
-	</body>
+                </pre>
+            </div>
+            <div id="terminal_multi_func" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_multi_func_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Import Modules : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">Import/(Keyword_name) </span>(module_name) 
+            </div>
+            <h3> Example: </h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runImportEx()">►</button>
+                <span class="keyword">استدعاء</span> (<span class="string"> "math.world" </span>) <br>
+            </div>
+            <div id="terminal_import" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_import_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Built-in Modules : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">import</span>(<span class="string">"module_name"</span>) 
+            </div>
+            <h3> Example (English) : </h3>
+            <div class="code_snippet" dir="ltr">
+                <span class="keyword">import</span>(<span class="string">"Random"</span>)<br>
+                <span class="builtin_func">print</span>(<span class="builtin_func">gen_random</span>(<span class="int">1</span>, <span class="int">10</span>))
+            </div>
+            <h3> Example (Arabic) : </h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runBuiltinModuleEx()">►</button>
+                <span class="keyword">استدعاء</span>(<span class="string">"Random"</span>)<br>
+                <span class="builtin_func">طباعة</span>(<span class="builtin_func">توليد_رقم_عشوائي</span>(<span class="int">1</span>, <span class="int">10</span>))
+            </div>
+            <div id="terminal_builtin_module" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_builtin_module_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Read files : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="builtin_func">function_name</span>(<span class="string"> "filename.ext" </span>)
+            </div>
+            <h3>Example :</h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runReadFileEx()">►</button>
+                <span class="keyword">متغير</span> س = <span class="builtin_func">قراءة_ملف</span>(<span class="string"> "test.txt" </span>)
+            </div>
+            <div id="terminal_read_file" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_read_file_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Write files : </h2>
+            <br>
+            <hr>
+            <h3>Syntax :</h3> 
+            <div class="code_snippet" dir="ltr">
+                <span class="builtin_func">function_name</span>(<span class="string"> "filename.ext" </span>, <span class="string"> "content" </span>)
+            </div>
+            <h3>Example :</h3>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runWriteFileEx()">►</button>
+                <span class="builtin_func">كتابة_ملف</span>(<span class="string"> "text.txt" </span>, <span class="string"> "Hello world" </span>)
+            </div>
+            <div id="terminal_write_file" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_write_file_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 style="text-align:center;"> Advanced Example: Hardware Voice Controller </h2>
+            <br>
+            <hr>
+            <p style="color:rgb(226, 239, 252)">
+                This example combines built-in modules (<span style="color:#00ff88;">Serial</span> & <span style="color:#00ff88;">Speech</span>), dictionaries, and infinite loops to listen for voice inputs and stream commands to a microcontroller driving a vehicle:
+            </p>
+            <br>
+            <div class="code_snippet" style="font-family:Cairo" dir="rtl">
+                <button class="run_btn" onclick="runDictEx()">►</button>
+                <pre style="font-size:15px !important;margin:0 !important; width:100% !important;">
+<span class="keyword">استدعاء</span>(<span class="string">"Serial"</span>) ; <span class="keyword">استدعاء</span>(<span class="string">"Speech"</span>)
+<span class="keyword">متغير</span> التعليمات = {<span class="string">"انعطف يمينا"</span>: <span class="string">"turn right"</span>, <span class="string">"انعطف يسارا"</span>: <span class="string">"turn left"</span>, <span class="string">"تحرك للامام"</span>: <span class="string">"move forward"</span>, <span class="string">"تحرك للخلف"</span>: <span class="string">"move backwards"</span>}
+<span class="keyword">بينما</span> <span class="keyword">صحيح</span> <span class="keyword">نفذ</span>
+	<span class="keyword">متغير</span> التعليمة = <span class="builtin_func">استمع</span>(<span class="string">"ar"</span>)
+	<span class="builtin_func">ارسال</span>(<span class="string">"COM4"</span>, <span class="int">9600</span>, التعليمات/التعليمة)
+<span class="keyword">نهاية</span>
+                </pre>
+            </div>
+            <div id="terminal_dict" class="terminal_output" dir="rtl">
+                <div class="terminal_header" dir="ltr">Terminal Output</div>
+                <div id="term_dict_res"></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <div style="display:flex;justify-content:space-between">
+                <div onclick="window.open('hello_world.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:lightblue;color:black;">
+                    ⬅ Prev 
+                </div>
+                
+                <div onclick="window.open('calc.html', '_self')" style="cursor:pointer;margin:5px;border-radius:10px; padding:10px; text-align:center;background:gray;color:white;">
+                    Next ➡
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleTerminal(termId, content) {
+                const term = document.getElementById(termId);
+                const isVisible = term.style.display === "block";
+                
+                if (isVisible && content === undefined) {
+                    term.style.display = "none";
+                } else {
+                    term.style.display = "block";
+                    if (content !== undefined) {
+                        const target = term.querySelector('div[id^="term_"]');
+                        if (target) target.innerHTML = content;
+                    }
+                }
+            }
+
+            function runOutputEx() {
+                toggleTerminal('terminal_output_ex', 'أهلا بالعالم');
+            }
+
+            function runVarsEx() {
+                toggleTerminal('terminal_vars_ex', '15');
+            }
+
+            function runTextInputEx() {
+                const inputVal = prompt("أدخل اسمك :", "زياد");
+                if (inputVal !== null) {
+                    toggleTerminal('terminal_text_input', inputVal);
+                }
+            }
+
+            function runNumInputEx() {
+                const n1 = prompt("أدخل الرقم الأول:", "10");
+                if (n1 === null) return;
+                const n2 = prompt("أدخل الرقم الثاني:", "20");
+                if (n2 === null) return;
+                
+                const sum = (parseFloat(n1) || 0) + (parseFloat(n2) || 0);
+                toggleTerminal('terminal_num_input', sum.toString());
+            }
+
+            function runInlineCondEx() {
+                toggleTerminal('terminal_inline_cond', '5 اصغر من 10');
+            }
+
+            function runMultiCondEx() {
+                toggleTerminal('terminal_multi_cond', '5 اصغر من 10');
+            }
+
+            function runInlineForEx() {
+                let out = '';
+                for(let i = 0; i < 11; i++) out += 'أهلا بالعالم<br>';
+                toggleTerminal('terminal_inline_for', out);
+            }
+
+            function runMultiForEx() {
+                let out = '';
+                for(let i = 0; i <= 10; i++) {
+                    out += i + '<br>';
+                    if (i === 5) break;
+                }
+                toggleTerminal('terminal_multi_for', out);
+            }
+
+            function runListLoopEx() {
+                const list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                let out = '';
+                for(let i = 0; i < list.length; i++) {
+                    out += list[i] + '<br>';
+                }
+                toggleTerminal('terminal_list_loop', out);
+            }
+
+            function runSimpleDictEx() {
+                toggleTerminal('terminal_simple_dict', 'زياد');
+            }
+
+            function runDictEx() {
+                const commands = {
+                    "انعطف يمينا": "turn right",
+                    "انعطف يسارا": "turn left",
+                    "تحرك للامام": "move forward",
+                    "تحرك للخلف": "move backwards"
+                };
+                const userVoice = prompt("أدخل الأمر الصوتي (انعطف يمينا / تحرك للامام / الخ):", "تحرك للامام");
+                if (userVoice !== null) {
+                    const translated = commands[userVoice] || "الأمر غير معروف";
+                    const out = "[Speech Recognition] Captured: " + userVoice + "<br>[Serial COM4 @ 9600 baud] Sent: " + translated;
+                    toggleTerminal('terminal_dict', out);
+                }
+            }
+
+            function runInlineWhileEx() {
+                toggleTerminal('terminal_inline_while', 'أهلا بالعالم<br>أهلا بالعالم<br>أهلا بالعالم<br>... [Infinite loop interrupted]');
+            }
+
+            function runMultiWhileEx() {
+                let out = '';
+                let b = 0;
+                while(b < 10) {
+                    out += 'ب اصغر من 10<br>';
+                    b++;
+                }
+                toggleTerminal('terminal_multi_while', out);
+            }
+
+            function runInlineFuncEx() {
+                toggleTerminal('terminal_inline_func', '[Function defined: أضف_واحد]');
+            }
+
+            function runMultiFuncEx() {
+                toggleTerminal('terminal_multi_func', '[Function defined: اضف_واحد]');
+            }
+
+            function runImportEx() {
+                toggleTerminal('terminal_import', '[Module loaded: math.world]');
+            }
+
+            function runBuiltinModuleEx() {
+                const randomVal = Math.floor(Math.random() * 10) + 1;
+                toggleTerminal('terminal_builtin_module', randomVal.toString());
+            }
+
+            function runReadFileEx() {
+                toggleTerminal('terminal_read_file', '[Loaded content from test.txt]');
+            }
+
+            function runWriteFileEx() {
+                toggleTerminal('terminal_write_file', '[Successfully written to text.txt]');
+            }
+        </script>
+    </body>
 </html>
